@@ -17,7 +17,7 @@ Use Gold Price plugin to display latest prices of Gold, Platinum, Silver and Pal
 = Key Features =
 
 *	Show live price for Gold, Silver, Platinum, Palladium - or any combination of those.
-*	Live prices
+*	Live prices updated every 2 mins
 *	Handles various common currencies
 *	Can do grams or ounces 
 *	Simple, light-weight, and looks good!

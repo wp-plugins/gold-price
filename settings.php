@@ -15,7 +15,7 @@
           <tbody id="the-list">
             <tr valign="top">
               <td><form name="frm" method="post" action="options.php">
-                   <?php settings_fields( 'baw-settings-group' ); ?>
+                   <?php settings_fields( 'gp-settings-group' ); ?>
                  <p style="font-weight:bold; margin-top:10px;"> Configure your widget here then add anywhere using shortcode  <input type="text" readonly="readonly" value="[gold-price]" size="7" /></p>
                   <table class="inner-setings">
                     <tr>

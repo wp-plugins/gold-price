@@ -3,9 +3,9 @@
 /*
 Plugin Name: Gold Price Plugin
 Plugin URI: http://www.wordpress.org/extend/plugins/gold-price
-Description: A really simple plugin that displays the latest prices of Gold, Platinum, Silver and Palladium in various currencies. The prices are auto updated every 15 minutes Monday-Friday
+Description: A really simple plugin that displays the latest prices of Gold, Platinum, Silver and Palladium in various currencies. The prices are auto updated every 2 minutes Monday-Friday
 Author: Enigma Digital
-Version: 1.0
+Version: 1.1
 Author URI: http://www.enigmaweb.com.au
 */
 error_reporting(0);
@@ -28,17 +28,18 @@ function gold_price_setting(){
 add_action( 'admin_init', 'register_gold_price_setting' );
 
 function register_gold_price_setting() {
-	register_setting( 'baw-settings-group', 'gp_metal_silver' );
-	register_setting( 'baw-settings-group', 'gp_metal_gold' );
-	register_setting( 'baw-settings-group', 'gp_metal_platinum' );
-	register_setting( 'baw-settings-group', 'gp_metal_palladium' );
-	register_setting( 'baw-settings-group', 'gp_currency' );
-	register_setting( 'baw-settings-group', 'measurement' );
-	register_setting( 'baw-settings-group', 'disp_measure' );
-	register_setting( 'baw-settings-group', 'time_stamp' );
-	register_setting( 'baw-settings-group', 'widget_design' );
-	register_setting( 'baw-settings-group', 'customcss' );
+	register_setting( 'gp-settings-group', 'gp_metal_silver' );
+	register_setting( 'gp-settings-group', 'gp_metal_gold' );
+	register_setting( 'gp-settings-group', 'gp_metal_platinum' );
+	register_setting( 'gp-settings-group', 'gp_metal_palladium' );
+	register_setting( 'gp-settings-group', 'gp_currency' );
+	register_setting( 'gp-settings-group', 'measurement' );
+	register_setting( 'gp-settings-group', 'disp_measure' );
+	register_setting( 'gp-settings-group', 'time_stamp' );
+	register_setting( 'gp-settings-group', 'widget_design' );
+	register_setting( 'gp-settings-group', 'customcss' );
 }
+
 //END Register Setting
 //Custom CSS admin hook
  if(get_option('customcss')!=""){

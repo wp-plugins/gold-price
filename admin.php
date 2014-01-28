@@ -3,9 +3,9 @@
 /*
 Plugin Name: Gold Price Plugin
 Plugin URI: http://www.wordpress.org/extend/plugins/gold-price
-Description: A really simple plugin that displays the latest prices of Gold, Platinum, Silver and Palladium in various currencies. The prices are auto updated every 2 minutes Monday-Friday
+Description: A really simple plugin that displays the latest prices of Gold, Platinum, Silver and Palladium in various currencies. The prices are auto updated every 15 minutes Monday-Friday
 Author: Enigma Digital
-Version: 1.1
+Version: 1.2
 Author URI: http://www.enigmaweb.com.au
 */
 error_reporting(0);
@@ -68,9 +68,9 @@ function gold_price_shortcode(){
 	$widget_design		=	get_option('widget_design');
 	
 	if($measurement == "grams")
-		$fileGold = "https://xml.dgcsc.org/xml.cfm?password=48A02BE64A13774688D8B7833F23769A16EF5819&action=GoldBE";
+		$fileGold = "http://enigmaplugins.com/get_xml/gold.xml";
 	else
-		$fileGold = "https://xml.dgcsc.org/xml.cfm?password=48A02BE64A13774688D8B7833F23769A16EF5819&action=GoldBOE";
+		$fileGold = "http://enigmaplugins.com/get_xml/goldounces.xml";
 	$contentsGold .= '<?xml version="1.0" encoding="utf-8" ?>
 	<gold>';
 	$contentsGold .= file_get_contents($fileGold); 
@@ -84,9 +84,9 @@ function gold_price_shortcode(){
 	
 	//
 	if($measurement == "grams")
-		$filesilver = "https://xml.dgcsc.org/xml.cfm?password=48A02BE64A13774688D8B7833F23769A16EF5819&action=SilverBE";
+		$filesilver = "http://enigmaplugins.com/get_xml/silver.xml";
 	else
-		$filesilver = "https://xml.dgcsc.org/xml.cfm?password=48A02BE64A13774688D8B7833F23769A16EF5819&action=SilverBOE";
+		$filesilver = "http://enigmaplugins.com/get_xml/silverounces.xml";
 	$contentssilver .= '<?xml version="1.0" encoding="utf-8" ?>
 	<silver>';
 	$contentssilver .= file_get_contents($filesilver); 
@@ -102,9 +102,9 @@ function gold_price_shortcode(){
 	
 	//
 	if($measurement == "grams")
-		$fileplatinum = "https://xml.dgcsc.org/xml.cfm?password=48A02BE64A13774688D8B7833F23769A16EF5819&action=PlatinumBE";
+		$fileplatinum = "http://enigmaplugins.com/get_xml/platinum.xml";
 	else
-		$fileplatinum = "https://xml.dgcsc.org/xml.cfm?password=48A02BE64A13774688D8B7833F23769A16EF5819&action=PlatinumBOE";
+		$fileplatinum = "http://enigmaplugins.com/get_xml/platinumounces.xml";
 	$contentsplatinum .= '<?xml version="1.0" encoding="utf-8" ?>
 	<platinum>';
 	$contentsplatinum .= file_get_contents($fileplatinum);
@@ -120,9 +120,9 @@ function gold_price_shortcode(){
 	
 	//
 	if($measurement == "grams")
-		$filepalladium = "https://xml.dgcsc.org/xml.cfm?password=48A02BE64A13774688D8B7833F23769A16EF5819&action=PalladiumBE";
+		$filepalladium = "http://enigmaplugins.com/get_xml/palladium.xml";
 	else
-		$filepalladium = "https://xml.dgcsc.org/xml.cfm?password=48A02BE64A13774688D8B7833F23769A16EF5819&action=PalladiumBOE";
+		$filepalladium = "http://enigmaplugins.com/get_xml/palladiumounces.xml";
 	$contentspalladium .= '<?xml version="1.0" encoding="utf-8" ?>
 	<palladium>';
 	$contentspalladium .= file_get_contents($filepalladium); 

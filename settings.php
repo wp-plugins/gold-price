@@ -93,7 +93,7 @@
                       <td><label>
                         <textarea name="customcss" cols="55" rows="15"><?php echo get_option('customcss') ?></textarea>
                       </label>
-                      <span>Enter custom styles here. This will override other default designs.</span>
+                      <span>Enter custom styles here. This will override the default design.</span>
                        </td>
                     </tr>
                   </table>
@@ -121,7 +121,7 @@
                 </form></td>
             </tr>
             <tr>
-              <td style="border:0;">You can also help by <a href="http://wordpress.org/extend/plugins/gold-price/" target="_blank">rating this plugin on wordpress.org</a></td>
+              <td style="border:0;">You can also help by <a href="http://wordpress.org/support/view/plugin-reviews/gold-price" target="_blank">rating this plugin on wordpress.org</a></td>
             </tr>
           </tbody>
         </table>

@@ -3,7 +3,7 @@ Contributors: EnigmaWeb
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CEJ9HFWJ94BG4
 Tags: Gold price, commodities, gold, silver, gold widget, gold price live, live gold price
 Requires at least: 3.1
-Tested up to: 3.8
+Tested up to: 3.8.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Gold Price - simple, nicely designed commodities price chart.
 
 == Description ==
 
-Use Gold Price plugin to display latest prices of Gold, Platinum, Silver and Palladium in various currencies. The prices are auto updated every 2 minutes Monday-Friday. It's easy to use, easy to customise, and stylish. Add to any page, post or widget using shortcode `[gold-price]`
+Use Gold Price plugin to display latest prices of Gold, Platinum, Silver and Palladium in various currencies. The prices are auto updated every 15 minutes Monday-Friday. It's easy to use, easy to customise, and stylish. Add to any page, post or widget using shortcode `[gold-price]`
 
 = Key Features =
 
@@ -50,7 +50,7 @@ The markets are closed on weekends and public holidays, so the prices will stay 
 
 = How accurate is the price data? Where is the data coming from? =
 
-This plugin pulls XML data feeds from dgcsc.org  The price data is surprisingly accurate although obviously we offer no guarantee. Remember "live market prices" can be extremely volatile, meaning prices can change very rapidly over a short period of time. For example, the gold price may spike up 5 dollars, then return to where it was in a matter of seconds. Our feed is only updated every 2 mins, so if there's a sudden change in price or a spike then that move could be missed completely. Likewise the price may be fetched right at the top of the spike. So keep in mind that what you're seeing is a "snapshot" of the price at a particular instant in time.
+This plugin pulls XML data feeds from dgcsc.org  The price data is surprisingly accurate although obviously we offer no guarantee. Remember "live market prices" can be extremely volatile, meaning prices can change very rapidly over a short period of time. For example, the gold price may spike up 5 dollars, then return to where it was in a matter of seconds. Our feed is only updated every 15 mins, so if there's a sudden change in price or a spike then that move could be missed completely. Likewise the price may be fetched right at the top of the spike. So keep in mind that what you're seeing is a "snapshot" of the price at a particular instant in time.
 
 = How can I customise the design? =
 
@@ -67,6 +67,10 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.2 =
+* Updated feed data source and schedule
+* Minor aesthetic tweaks
+
 = 1.1 =
 * Bug fix - changed settings group name to avoid conflicts with other plugins
 
@@ -74,6 +78,10 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.2 =
+* Updated feed data source and schedule
+* Minor aesthetic tweaks
 
 = 1.1 =
 * Bug fix - changed settings group name to avoid conflicts with other plugins

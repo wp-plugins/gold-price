@@ -18,7 +18,7 @@ Use Gold Price plugin to display latest prices of Gold, Platinum, Silver and Pal
 
 *	Show live price for Gold, Silver, Platinum, Palladium - or any combination of those.
 *	Live prices updated every 2 mins
-*	Handles various common currencies
+*	Choose currency
 *	Can do grams or ounces 
 *	Simple, light-weight, and looks good!
 *   Easy to customise with CSS
@@ -67,6 +67,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.3 =
+* Added support for more currencies
+
 = 1.2 =
 * Updated feed data source and schedule
 * Minor aesthetic tweaks
@@ -78,6 +81,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.3 =
+* Added support for more currencies
 
 = 1.2 =
 * Updated feed data source and schedule

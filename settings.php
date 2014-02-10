@@ -40,10 +40,53 @@
                       <td width="150" style="line-height:27px;">Currency to display</td>
                       <td><select name="gp_currency">
                           <option value="AUD" <?php if(get_option('gp_currency')=='AUD'){echo 'selected="selected"';} ?>>Australian Dollars</option>
+						  <option value="USD" <?php if(get_option('gp_currency')=='USD'){echo 'selected="selected"';} ?>>United States Dollar</option>
+						  <option value="EUR" <?php if(get_option('gp_currency')=='EUR'){echo 'selected="selected"';} ?>>Euro</option>
                           <option value="AED" <?php if(get_option('gp_currency')=='AED'){echo 'selected="selected"';} ?>>Emirati Dirham</option>
-                          <option value="CAD" <?php if(get_option('gp_currency')=='CAD'){echo 'selected="selected"';} ?>>Canadian Dollar</option>
-                          <option value="JPY" <?php if(get_option('gp_currency')=='JPY'){echo 'selected="selected"';} ?>>Japanese Yen</option>
-                          <option value="USD" <?php if(get_option('gp_currency')=='USD'){echo 'selected="selected"';} ?>>United States Dollar</option>
+                          <option value="ARS" <?php if(get_option('gp_currency')=='ARS'){echo 'selected="selected"';} ?>>Argentine Peso</option>
+						  <option value="BHD" <?php if(get_option('gp_currency')=='BHD'){echo 'selected="selected"';} ?>>Bahraini Dinar</option>
+						  <option value="BRL" <?php if(get_option('gp_currency')=='BRL'){echo 'selected="selected"';} ?>>Brazilian Real</option>
+						  <option value="CAD" <?php if(get_option('gp_currency')=='CAD'){echo 'selected="selected"';} ?>>Canadian Dollar</option>
+						  <option value="CHF" <?php if(get_option('gp_currency')=='CHF'){echo 'selected="selected"';} ?>>Swiss Franc</option>
+						  <option value="CNY" <?php if(get_option('gp_currency')=='CNY'){echo 'selected="selected"';} ?>>Chinese Yuan Renminbi</option>
+						  <option value="COP" <?php if(get_option('gp_currency')=='COP'){echo 'selected="selected"';} ?>>Colombian Peso</option>
+						  <option value="CZK" <?php if(get_option('gp_currency')=='CZK'){echo 'selected="selected"';} ?>>Czech Koruna</option>
+						  <option value="DJF" <?php if(get_option('gp_currency')=='DJF'){echo 'selected="selected"';} ?>>Djiboutian Franc</option>
+						  <option value="DZD" <?php if(get_option('gp_currency')=='DZD'){echo 'selected="selected"';} ?>>Algerian Dinar</option>
+						  <option value="EGP" <?php if(get_option('gp_currency')=='EGP'){echo 'selected="selected"';} ?>>Egyptian Pound</option>
+						  <option value="EUR" <?php if(get_option('gp_currency')=='EUR'){echo 'selected="selected"';} ?>>Euro</option>
+						  <option value="GBP" <?php if(get_option('gp_currency')=='GBP'){echo 'selected="selected"';} ?>>British Pound</option>
+						  <option value="HKD" <?php if(get_option('gp_currency')=='HKD'){echo 'selected="selected"';} ?>>Hong Kong Dollar</option>
+						  <option value="IDR" <?php if(get_option('gp_currency')=='IDR'){echo 'selected="selected"';} ?>>Indonesian Rupiah</option>
+						  <option value="INR" <?php if(get_option('gp_currency')=='INR'){echo 'selected="selected"';} ?>>Indian Rupee</option>
+						  <option value="IQD" <?php if(get_option('gp_currency')=='IQD'){echo 'selected="selected"';} ?>>Iraqi Dinar</option>
+						  <option value="JOD" <?php if(get_option('gp_currency')=='JOD'){echo 'selected="selected"';} ?>>Jordanian Dinar</option>
+						  <option value="JPY" <?php if(get_option('gp_currency')=='JPY'){echo 'selected="selected"';} ?>>Japanese Yen</option>
+						  <option value="KWD" <?php if(get_option('gp_currency')=='KWD'){echo 'selected="selected"';} ?>>Kuwaiti Dinar</option>
+						  <option value="LBP" <?php if(get_option('gp_currency')=='LBP'){echo 'selected="selected"';} ?>>Lebanese Pound</option>
+						  <option value="LYD" <?php if(get_option('gp_currency')=='LYD'){echo 'selected="selected"';} ?>>Libyan Dinar</option>
+						  <option value="MAD" <?php if(get_option('gp_currency')=='MAD'){echo 'selected="selected"';} ?>>Moroccan Dirham</option>
+						  <option value="MRO" <?php if(get_option('gp_currency')=='MRO'){echo 'selected="selected"';} ?>>Mauritanian Ougiya</option>
+						  <option value="MXO" <?php if(get_option('gp_currency')=='MXO'){echo 'selected="selected"';} ?>>Mexican Peso</option>
+						  <option value="MYR" <?php if(get_option('gp_currency')=='MYR'){echo 'selected="selected"';} ?>>Malaysian Ringgit</option>
+						  <option value="NZD" <?php if(get_option('gp_currency')=='NZD'){echo 'selected="selected"';} ?>>New Zealand Dollar</option>
+						  <option value="OMR" <?php if(get_option('gp_currency')=='OMR'){echo 'selected="selected"';} ?>>Omani Rial</option>
+						  <option value="PEN" <?php if(get_option('gp_currency')=='PEN'){echo 'selected="selected"';} ?>>Peruvian Nuevo Sol</option>
+						  <option value="PHP" <?php if(get_option('gp_currency')=='PHP'){echo 'selected="selected"';} ?>>Philippine Peso</option>
+						  <option value="PLN" <?php if(get_option('gp_currency')=='PLN'){echo 'selected="selected"';} ?>>Polish Zloty</option>
+						  <option value="QAR" <?php if(get_option('gp_currency')=='QAR'){echo 'selected="selected"';} ?>>Qatari Riyal</option>
+						  <option value="RUB" <?php if(get_option('gp_currency')=='RUB'){echo 'selected="selected"';} ?>>Russian Rouble</option>
+						  <option value="SAR" <?php if(get_option('gp_currency')=='SAR'){echo 'selected="selected"';} ?>>Saudi Arabian Riyal</option>
+						  <option value="SDG" <?php if(get_option('gp_currency')=='SDG'){echo 'selected="selected"';} ?>>Sudanese Pound</option>
+						  <option value="SEK" <?php if(get_option('gp_currency')=='SEK'){echo 'selected="selected"';} ?>>Swedish Krona</option>
+						  <option value="SGD" <?php if(get_option('gp_currency')=='SGD'){echo 'selected="selected"';} ?>>Singapore Dollar</option>
+						  <option value="SOS" <?php if(get_option('gp_currency')=='SOS'){echo 'selected="selected"';} ?>>Somali Shilling</option>
+						  <option value="SYP" <?php if(get_option('gp_currency')=='SYP'){echo 'selected="selected"';} ?>>Syrian Pound</option>
+						  <option value="TND" <?php if(get_option('gp_currency')=='TND'){echo 'selected="selected"';} ?>>Tunisian Dinar</option>
+						  <option value="TRY" <?php if(get_option('gp_currency')=='TRY'){echo 'selected="selected"';} ?>>Turkish Lira</option>
+						  <option value="VUV" <?php if(get_option('gp_currency')=='VUV'){echo 'selected="selected"';} ?>>Vanuatu Vatu</option>
+						  <option value="YER" <?php if(get_option('gp_currency')=='YER'){echo 'selected="selected"';} ?>>Yemeni Rial</option>
+						  <option value="ZAR" <?php if(get_option('gp_currency')=='ZAR'){echo 'selected="selected"';} ?>>South African Rand</option>						  
                         </select></td>
                     </tr>
                     <tr>

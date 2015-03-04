@@ -67,6 +67,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.3.1 =
+* Updated feed URLs to https
+
 = 1.3 =
 * Added support for more currencies
 
@@ -81,6 +84,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.3.1 =
+* Updated feed URLs to https
 
 = 1.3 =
 * Added support for more currencies
